@@ -1,0 +1,148 @@
+#regform {
+
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 4px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+
+}
+
+.container {
+  margin-top: 10%;
+}
+
+.button {
+  --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --edge-light: hsla(0, 0%, 50%, 0.8);
+  --text-light: rgba(255, 255, 255, 0.4);
+  --back-color: 240, 40%;
+
+  cursor: pointer;
+  padding: 0.7em 1em;
+  border-radius: 0.5em;
+  min-height: 2.4em;
+  min-width: 3em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  font-weight: bold;
+
+  background: linear-gradient(140deg,
+      hsla(var(--back-color), 50%, 1) min(2em, 20%),
+      hsla(var(--back-color), 50%, 0.6) min(8em, 100%));
+  color: hsla(0, 0%, 90%);
+  border: 0;
+  box-shadow: inset 0.4px 1px 4px var(--edge-light);
+
+  transition: all 0.1s var(--bezier);
+}
+
+.button:hover {
+  --edge-light: hsla(0, 0%, 50%, 1);
+  text-shadow: 0px 0px 10px var(--text-light);
+  box-shadow: inset 0.4px 1px 4px var(--edge-light),
+    2px 4px 8px hsla(0, 0%, 0%, 0.295);
+  transform: scale(1.1);
+}
+
+.button:active {
+  --text-light: rgba(255, 255, 255, 1);
+
+  background: linear-gradient(140deg,
+      hsla(var(--back-color), 50%, 1) min(2em, 20%),
+      hsla(var(--back-color), 50%, 0.6) min(8em, 100%));
+  box-shadow: inset 0.4px 1px 8px var(--edge-light),
+    0px 0px 8px hsla(var(--back-color), 50%, 0.6);
+  text-shadow: 0px 0px 20px var(--text-light);
+  color: hsla(0, 0%, 100%, 1);
+  letter-spacing: 0.1em;
+  transform: scale(1);
+}
+
+body {
+
+  background-image: url("https://getwallpapers.com/wallpaper/full/e/8/0/1408376-new-most-beautiful-background-1920x1200-screen.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  animation: ani 1s ease-in forwards;
+}
+
+@keyframes ani {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+
+  to {
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+
+}
+
+#homeimg {
+  filter: drop-shadow(8px 8px 80px);
+  /* margin-left: 20px; */
+
+}
+
+.text-block {
+  position: absolute;
+  bottom: 350px;
+  right: 650px;
+  /* background-color: black; */
+  color: white;
+  padding-left: 100px;
+  padding-right: 20px;
+  font-size: larger;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: lavender;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 4px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.me-auto {
+  font-size: medium;
+  font-weight: 400;
+  text-decoration: none;
+
+}

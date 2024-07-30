@@ -1,0 +1,38 @@
+div #app2 {
+    margin-top: 5rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    border-radius: 10px;
+}
+
+#regform {
+    background-color: #fff;
+}
+
+div #add2 {
+    background-image: url("https://getwallpapers.com/wallpaper/full/e/8/0/1408376-new-most-beautiful-background-1920x1200-screen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div #edit2 {
+
+    background: url('https://pearlsol.com/img/breadcrumb/hd%20blog%20pic.jpg');
+    background: cover;
+
+}
+
+div {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#align {
+    text-align: center;
+}
+
+#value {
+    width: 100%;
+}
